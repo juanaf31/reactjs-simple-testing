@@ -20,6 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:watch": "yarn run test -- --watch",
+    "coverage": "yarn run test --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^5.0.3",
+    "react-test-renderer": "^17.0.1"
   }
 }

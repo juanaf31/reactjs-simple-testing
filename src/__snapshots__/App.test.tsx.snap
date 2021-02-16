@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button matches snapshot 1`] = `
+<div
+  className="wrapper"
+>
+  <h1>
+    Nusantech TODOs
+  </h1>
+  <form
+    onSubmit={[Function]}
+  >
+    <label
+      htmlFor="data-input"
+    >
+      What you want to do?
+    </label>
+    <br />
+    <input
+      id="data-input"
+      onChange={[Function]}
+      value=""
+    />
+    <button
+      className=""
+      data-testid="buttonSubmit"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      Add #1
+    </button>
+    <button
+      onClick={[Function]}
+      type="button"
+    >
+      clear
+    </button>
+  </form>
+  <ul />
+</div>
+`;
