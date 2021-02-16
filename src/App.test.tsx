@@ -81,8 +81,6 @@ test('allows user to clear list',()=>{
 
 
 test('button matches snapshot',()=>{
-  // const {getByTestId}=render(<App/>)
-  // const buttonSubmit = getByTestId('buttonSubmit')
   const tree = renderer.create(<App/>).toJSON()
   expect(tree).toMatchSnapshot()
 })

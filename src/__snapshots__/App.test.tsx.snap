@@ -2,40 +2,44 @@
 
 exports[`button matches snapshot 1`] = `
 <div
-  className="wrapper"
+  className="App"
 >
-  <h1>
-    Nusantech TODOs
-  </h1>
-  <form
-    onSubmit={[Function]}
+  <div
+    className="wrapper"
   >
-    <label
-      htmlFor="data-input"
+    <h1>
+      Nusantech TODOs
+    </h1>
+    <form
+      onSubmit={[Function]}
     >
-      What you want to do?
-    </label>
-    <br />
-    <input
-      id="data-input"
-      onChange={[Function]}
-      value=""
-    />
-    <button
-      className=""
-      data-testid="buttonSubmit"
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-    >
-      Add #1
-    </button>
-    <button
-      onClick={[Function]}
-      type="button"
-    >
-      clear
-    </button>
-  </form>
-  <ul />
+      <label
+        htmlFor="data-input"
+      >
+        What you want to do?
+      </label>
+      <br />
+      <input
+        id="data-input"
+        onChange={[Function]}
+        value=""
+      />
+      <button
+        className=""
+        data-testid="buttonSubmit"
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+      >
+        Add #1
+      </button>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        clear
+      </button>
+    </form>
+    <ul />
+  </div>
 </div>
 `;

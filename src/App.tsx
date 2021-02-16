@@ -28,23 +28,25 @@ function App() {
     setItems([])
   }
   return (
-    <div className='wrapper'>
-      <h1>Nusantech TODOs</h1>
-     
-      <form onSubmit={handleSubmit}>
-          <label htmlFor="data-input">What you want to do?</label>
-          <br/>
-          <input id='data-input' onChange={handleChange} value={text}/>
-          <button data-testid='buttonSubmit' className={isHovered?'hovered':''} onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
-            {`Add #${items.length+1}`}
-          </button>
-          <button type='button' onClick={handleClear}>clear</button>
-      </form>
-      <ul>
-        {items.map((item)=>(
-          <li key={item.id}>{item.item}</li>
-        ))}
-      </ul>
+    <div className='App'>
+      <div className='wrapper'>
+        <h1>Nusantech TODOs</h1>
+      
+        <form onSubmit={handleSubmit}>
+            <label htmlFor="data-input">What you want to do?</label>
+            <br/>
+            <input id='data-input' onChange={handleChange} value={text}/>
+            <button data-testid='buttonSubmit' className={isHovered?'hovered':''} onMouseEnter={()=>setIsHovered(true)} onMouseLeave={()=>setIsHovered(false)}>
+              {`Add #${items.length+1}`}
+            </button>
+            <button type='button' onClick={handleClear}>clear</button>
+        </form>
+        <ul>
+          {items.map((item)=>(
+            <li key={item.id}>{item.item}</li>
+            ))}
+        </ul>
+      </div>
     </div>
   );
 }
